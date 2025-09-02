@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RETRO — Pong (Canvas)</title>
+  <style>
+    html,body{height:100%;margin:0;background:#111;color:#eee;font-family:system-ui}
+    .wrap{display:flex;align-items:center;justify-content:center;height:100%}
+    canvas{image-rendering:pixelated;border:2px solid #444;background:#000}
+    .hud{position:fixed;top:10px;left:10px;opacity:.8;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="hud">Controls: ↑/↓ to move • R to reset</div>
+  <div class="wrap"><canvas id="game" width="640" height="360"></canvas></div>
+  <script src="game.js"></script>
+</body>
+</html>
